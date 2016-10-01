@@ -12,7 +12,7 @@ public static class AutoBuilder {
 		PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.iOS);
         BuildPipeline.BuildPlayer(new EditorBuildSettingsScene[] { 
-            new EditorBuildSettingsScene("Assets/Scene1/Scene1.unity", true),
+            new EditorBuildSettingsScene("Assets/Scene1/Scene2.unity", true),
 		}, "Builds/iOS", BuildTarget.iOS, BuildOptions.SymlinkLibraries);
     }
 
@@ -23,7 +23,7 @@ public static class AutoBuilder {
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.iOS, "CALABASH_UNITY");
 		EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.iOS);
 		BuildPipeline.BuildPlayer(new EditorBuildSettingsScene[] {
-			new EditorBuildSettingsScene("Assets/Scene1/Scene1.unity", true),
+			new EditorBuildSettingsScene("Assets/Scene1/Scene2.unity", true),
 		}, "Builds/iOS", BuildTarget.iOS, BuildOptions.SymlinkLibraries);
 	}
 
